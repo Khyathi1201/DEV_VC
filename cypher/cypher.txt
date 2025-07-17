@@ -1,0 +1,16 @@
+%% To whom it may concern
+Plaintext= input('Plaintext: ','s')
+Shift= input('Shift: ')
+Output = Plaintext+Shift;
+r=Output-26;
+for i = 1:length(Plaintext)
+    
+    if Output(i) <= 90
+        Output(i) = char(Output(i));
+        
+    else
+        Output(i) = char(r(i));
+    end
+end
+fprintf('Ciphertext: ','s')
+disp(char(Output))
