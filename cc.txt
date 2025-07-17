@@ -1,0 +1,12 @@
+% After resizing and smoothing images (step 6 and step 7), you can apply encryption
+encrypted_image1 = mod(double(r) + shift_value, 256);
+encrypted_image2 = mod(double(rr) + shift_value, 256);
+
+% Show encrypted images
+subplot(1, 2, 1);
+imshow(uint8('1.jpg));
+title('Encrypted Image 1');
+
+subplot(1, 2, 2);
+imshow(uint8('2.jpg'));
+title('Encrypted Image 2');
